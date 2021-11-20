@@ -1,24 +1,24 @@
-신장트리(spanning tree) : 그래프내의 모든 정점을 포함하는 트리<br>
+###신장트리(spanning tree) : 그래프내의 모든 정점을 포함하는 트리<br>
 신장트리는 모든 정점들이 연결되어 있어야 하고 또한 사이클을 포함해서는 안된다. <br>
 신장트리의 예 : 깊이우선 신장트리, 너비우선 신장트리, 최소비용 신장트리 <br>
-신장트리의 용도 : 통신 네트워크 구축<br>
+신장트리의 용도 : 통신 네트워크 구축<br><br>
 
 
-최소비용 신장트리 (MST : minumum spanning tree)<br>
+###최소비용 신장트리 (MST : minumum spanning tree)<br>
 네트워크에 있는 모든 정점들을 가장 적은 수의 간선과 비용으로 연결하는 신장트리<br>
 MST의 응용 : 도로 건설, 전기 회로, 통신, 배관 <br>
 ① kruskal 알고리즘<br>
-② prim 알고리즘<br>
+② prim 알고리즘<br><br>
 
 
-prim 알고리즘의 시간 복잡도 <br>
-  주 반복문이 정점의 수 n만큼 반복하고, 내부 반복문이 n번 반복 -> O(n^2)<br>
+####prim 알고리즘의 시간 복잡도 <br>
+  주 반복문이 정점의 수 n만큼 반복하고, 내부 반복문이 n번 반복 -> O(n^2)<br><br>
 
 
-kruskal 알고리즘의 시간 복잡도 <br>
-  O(e*log e)<br>
+####kruskal 알고리즘의 시간 복잡도 <br>
+  O(e*log e)<br><br>
 
 
-[prim VS kruskal]<br>
+###[prim VS kruskal]<br>
 - 그래프 내에 적은 숫자의 간선만을 가지는 '희소 그래프(sparse graph)'의 경우 -> Kruskal 알고리즘에 적합<br>
-- 그래프에 간선이 많이 존재하는 '밀집 그래프(Dense Graph)'의 경우 -> Prim 알고리즘에 적합<br>
+- 그래프에 간선이 많이 존재하는 '밀집 그래프(Dense Graph)'의 경우 -> Prim 알고리즘에 적합<br><br>
