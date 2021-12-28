@@ -1,0 +1,6 @@
+<h1>12-2 컬렉션 프레임워크</h1>
+<h2>컬렉션 프레임워크란?</h2>
+자바에서는 필요한 자료 구조를 미리 구현하여 java.util 패키지에서 제공하고 있는데, 이를 컬렉션 프레임워크 (collection framework)라고 한다.
+
+<h2>Collection 인터페이스</h2>
+<img src="https://t1.daumcdn.net/cfile/tistory/267D4E375850DF0335">
