@@ -15,3 +15,14 @@ for(var i = 0; i < array.length; i++){
 //  4444
 //  55555
 ```
+<br><br><br><br>
+
+### 응용 문제
+**수박수박수박수박수박수?** <br>
+https://school.programmers.co.kr/learn/courses/30/lessons/12922?language=javascript
+```
+function solution(n) {
+    
+    return '수박'.repeat(n/2) + (n % 2 ===1? '수':'');
+}
+```
