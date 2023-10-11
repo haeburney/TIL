@@ -1,4 +1,3 @@
-package net.innofactory.lecture.hkim;
 
 class Animal { // 동물
     private int weight; // 체중
