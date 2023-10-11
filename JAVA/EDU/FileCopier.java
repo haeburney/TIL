@@ -1,4 +1,3 @@
-package net.innofactory.lecture.hkim;
 
 import java.io.File;
 import java.io.FileInputStream;
