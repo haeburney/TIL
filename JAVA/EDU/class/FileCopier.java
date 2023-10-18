@@ -6,8 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * 파일 복사하기
+ * 
+ *
+ */
 public class FileCopier {
-	public static void copy(String sourceFileName, String targetFileName) {
+	public void copy(String sourceFileName, String targetFileName) {
 		File file = new File(sourceFileName); // 원본 파일명
 		File copyFile = new File(targetFileName); // 복사본 파일명
 
@@ -32,16 +37,17 @@ public class FileCopier {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		if(args.length<2) {
+		if (args.length < 2) {
 			System.out.println("Usage: java FileCopier sourceFileName targetFileName");
 			return;
 		}
-		
+
 		String sourceFileName = args[0];
 		String targetFileName = args[1];
-		
-		copy(sourceFileName, targetFileName);
+
+		FileCopier fileCopier = new FileCopier();
+		fileCopier.copy(sourceFileName, targetFileName);
 	}
 }

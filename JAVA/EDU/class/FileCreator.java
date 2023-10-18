@@ -5,8 +5,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * 파일 생성
+ * 
+ *
+ */
 public class FileCreator {
-	public static void create(String createFileName ,String createFileContent) {
+	public void create(String createFileName, String createFileContent) {
 		File file = new File(createFileName); // 생성할 파일명
 
 		try {
@@ -32,15 +37,16 @@ public class FileCreator {
 	}
 
 	public static void main(String[] args) {
-		if(args.length<2) {
+		if (args.length < 2) {
 			System.out.println("Usage: java FileCreator FileName FileContent");
 			return;
 		}
-		
+
 		String createFileName = args[0];
 		String createFileContent = args[1];
-		
-		create(createFileName,createFileContent);
-		
+
+		FileCreator fileCreator = new FileCreator();
+		fileCreator.create(createFileName, createFileContent);
+
 	}
 }
