@@ -1,24 +1,35 @@
-package work.practice.runningmachine;
+package inherit;
 
-import work.practice.runningmachine.Runner;
+import runningmachine.Runner;
 
-public class Dog extends Animal implements Runner {
-	private String kind; // 품종
+/**
+ * 강아지 클래스, 동물 상속
+ */
+public class Dog extends Animal {
+    /** 품종 */
+    private String kind;
 
-	@Override
-	public void run() { // 뛰기
-		System.out.println("강아지가 뛴다.");
-	}
+    /**
+     * 강아지가 달린다
+     */
+    @Override
+    public void run() {
+        System.out.println("강아지가 뛴다.");
+    }
 
-	public void bark() { // 짖기
-		System.out.println("강아지가 짖는다");
-	}
+    /**
+     * 짖는다
+     */
+    public void bark() { // 짖기
+        System.out.println("강아지가 짖는다");
+    }
 
-	public String getKind() {
-		return kind;
-	}
+    public String getKind() {
+        return kind;
+    }
 
-	public void setKind(String kind) {
-		this.kind = kind;
-	}
+    public void setKind(String kind) {
+        this.kind = kind;
+    }
+
 }

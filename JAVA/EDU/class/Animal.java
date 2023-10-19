@@ -1,17 +1,26 @@
-package work.practice.runningmachine;
+package inherit;
 
-public class Animal {
-	private int weight; // 체중
+import runningmachine.Runner;
 
-	public void run() { // 뛰기
-		System.out.println("동물이 뛴다.");
-	}
+/**
+ * 동물 클래스
+ */
+public class Animal implements Runner {
+    /** 체중 */
+    private int weight;
 
-	public int getWeight() {
-		return weight;
-	}
+    /**
+     * 동물이 달린다
+     */
+    public void run() {
+        System.out.println("동물이 뛴다.");
+    }
 
-	public void setWeight(int weight) {
-		this.weight = weight;
-	}
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 }
